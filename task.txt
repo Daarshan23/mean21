@@ -1,0 +1,172 @@
+1. user define -- user majuri 
+2. internal -- node majuri
+3. external -- third party majuri
+
+
+
+var calc = require("./calc")
+var http = require("http")
+var express = require("express")  -> package.json
+
+------------------------------------------------------------------
+HTTP method 
+
+GET  -->  VIEW READ 
+POST -->  DATA -> new  -> insert 
+DELETE --> DATA DESTROY - delete 
+PUT --> DATA -> modified -> update 
+PATCH -> same as PUT 
+TRACE
+HEAD 
+
+REST Api 
+
+
+REST CLIENT -> api consume -> postman 
+----------------------------------------------
+
+api 
+
+JAVA API
+
+JDBC API
+
+SOAP API  -> XML 
+
+        <movies>
+            <movie>
+                <name>TheKeralaStory</name>
+            </movie>
+            <movie>
+                <name>TheKeralaStory</name>
+            </movie>
+        </movies>
+
+REST API  -> JSON 
+{
+    "key":"value"
+}
+
+movies:{
+    [
+        movie:{
+               "name":"X" 
+        },
+        movie:{
+
+        }
+    ]
+}
+
+
+Gmaps API 
+  REST API 
+
+1) input json output json 
+2) new  POST 
+3) modify PUT 
+4) destroy DELETE 
+5) read  GET 
+
+
+------------------------------------------
+
+USER -> sessionController -> 
+                    signup()
+                    login()  email,password -> login  | error 
+                    listUsers()
+
+
+------------------------------------------
+
+product 
+        productId 
+        name 
+        price 
+        qty 
+
+addProduct
+getAllProducts
+removeProductById  
+viewProductById 
+
+
+
+direct -> 
+
+mongoose -> 
+
+mongodb -> schema less ->  
+
+users -> 1) email firstname 
+        2) firstname email password 
+        3) firstName email password address 
+
+column - data type - validation
+
+firstname : digit "1213"
+firstnamme 
+
+validation -> uniq , required , 
+
+
+semantic version 
+ 7 -> major 
+ 4 -> miner 
+ 2 -> patch 
+
+^7.4.2 => 7.X  [ minor version ]
+
+~7.4.2 => 7.4.X   [ patch version ]
+
+7.4.2 => exact 
+
+
+---------------------------------------------------------------
+
+industry{_id,name} 
+equity {_id,companyName,symbol,ISINCode,fk:industry,price,52wH,52wL} 
+
+
+1) getAllScripts 
+    
+2) addScript  { read csv -> add all 50 data into db }
+
+3) getScriptBySymbol { SBIN } => exact SBIN 
+
+4) getScriptBySymbols { SB } => starts with SB 
+
+5) deleteBySymbol* { SBIN }
+
+6) updateBySymbol* { SBIN }
+
+
+
+---------------------------------------------------------------
+
+root_dir 
+    src
+        app 
+            controller 
+            service 
+            model 
+            config 
+            script 
+                
+ 
+
+-----------------------------------------------------------------
+npm i csv-reader
+
+api -> call -> .csv read -> unique industry name -> db save 
+
+----------------------------------------------------------
+file uploading -> image , audio , video , exe , pdf --> file 
+
+image / pdf / extension 
+
+size -> 5mb 10mb 
+
+count -> 10 file 
+
+multer -> 
